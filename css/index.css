@@ -130,7 +130,59 @@ table {
 * {
   box-sizing: border-box;
 }
+html {
+  font-size: 62.5%;
+}
 html,
 body {
   height: 100%;
+}
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+.container nav {
+  display: flex;
+  justify-content: flex-end;
+}
+.container nav a {
+  text-decoration: none;
+  color: black;
+  padding: 25px;
+  font-size: 1.6rem;
+}
+.container nav a:hover {
+  text-decoration: underline;
+  transition-duration: 0.5s;
+  color: red;
+}
+.container .intro {
+  background-color: gray;
+  border-radius: 5px;
+  background-color: #d3d3d3;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+}
+.container .intro img {
+  width: 30%;
+  height: auto;
+  padding: 25px 20px;
+  border-radius: 5px;
+}
+.container .intro h1 {
+  font-size: 3.0rem;
+  padding: 0 20px;
+}
+.container .intro p {
+  font-size: 1.6rem;
+  padding: 10px 20px;
+}
+.container .intro .btn {
+  width: 30%;
+  padding: 10px;
+  margin-left: 30px;
+  margin-bottom: 45px;
+  background-color: gray;
+  border-radius: 5px;
 }

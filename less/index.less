@@ -52,7 +52,75 @@ table {
 * {
     box-sizing: border-box;
 }
-
+html {
+	font-size: 62.5%;
+}
 html, body {
     height: 100%;
+}
+@background-color: #D3D3D3;
+@standard-font: 1.6rem;
+
+.link-hover:hover {
+	text-decoration: underline;
+	transition-duration: 0.5s;
+	color: red;
+}
+.container {
+	width: 900px;
+	margin: 0 auto;
+
+	nav {
+		display: flex;
+		justify-content: flex-end;
+		
+		
+		a {
+			text-decoration: none;
+			color: black;
+			padding: 25px;
+			font-size: @standard-font;
+
+			&:hover {
+				.link-hover;
+			}
+		}
+	}
+	.intro {
+		background-color: gray;
+		border-radius: 5px;
+		background-color: @background-color;
+		display: flex;
+		flex-direction: column;
+		align-content: space-around;
+
+		img {
+			width: 30%;
+			height: auto;
+			padding: 25px 20px;
+			border-radius: 5px;
+		}
+		h1 {
+			font-size: 3.0rem;
+			padding: 0 20px;
+		}
+		p {
+			font-size: @standard-font;
+			padding: 10px 20px;
+		}
+	}
+	.btn {
+		width: 30%;
+		padding: 10px;
+		margin-left: 30px;
+		margin-bottom: 45px;
+		background-color: gray;
+		border-radius: 5px;
+
+		a {
+			text-color: black	
+
+		}
+		}
+	
 }
