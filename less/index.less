@@ -152,6 +152,7 @@ html, body {
 			
 			td {
 				border-bottom: 1px solid gray;
+				padding: 7px;
 			}
 		}
 	}
@@ -159,5 +160,40 @@ html, body {
 		font-size: @heading-size;
 		padding-top: 20px;
 		padding-bottom: 10px;
+	}
+	.education {
+		border: 1px gray solid;
+		width: 100%;
+		font-size: @standard-font;
+		text-align: center;
+
+		th {
+			font-weight: bold;
+			padding: 10px 0;
+			border-bottom: 1px solid gray;
+			background-color: @background-color;
+		}
+		tr:nth-child(2) {
+			border-bottom: 1px solid gray;
+			
+			
+			td {
+				padding: 10px 0;
+			}
+		}
+		tr:nth-child(3) {
+			background-color: @background-color;
+			td {
+				padding: 10px 0;
+			}
+		}
+	}
+	footer {
+		width: 100%;
+		font-size: @standard-font;
+		 p {
+			 text-align: center;
+			 padding: 30px;
+		 }
 	}
 }

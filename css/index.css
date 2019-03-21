@@ -223,9 +223,42 @@ body {
 }
 .container .description table td {
   border-bottom: 1px solid gray;
+  padding: 7px;
 }
 .container h2 {
   font-size: 3rem;
   padding-top: 20px;
   padding-bottom: 10px;
+}
+.container .education {
+  border: 1px gray solid;
+  width: 100%;
+  font-size: 1.6rem;
+  text-align: center;
+}
+.container .education th {
+  font-weight: bold;
+  padding: 10px 0;
+  border-bottom: 1px solid gray;
+  background-color: #d3d3d3;
+}
+.container .education tr:nth-child(2) {
+  border-bottom: 1px solid gray;
+}
+.container .education tr:nth-child(2) td {
+  padding: 10px 0;
+}
+.container .education tr:nth-child(3) {
+  background-color: #d3d3d3;
+}
+.container .education tr:nth-child(3) td {
+  padding: 10px 0;
+}
+.container footer {
+  width: 100%;
+  font-size: 1.6rem;
+}
+.container footer p {
+  text-align: center;
+  padding: 30px;
 }
