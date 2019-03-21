@@ -60,8 +60,9 @@ html, body {
 }
 @background-color: #D3D3D3;
 @standard-font: 1.6rem;
+@heading-size: 3.0rem;
 
-.link-hover:hover {
+.link-hover {
 	text-decoration: underline;
 	transition-duration: 0.5s;
 	color: red;
@@ -101,7 +102,7 @@ html, body {
 			border-radius: 5px;
 		}
 		h1 {
-			font-size: 3.0rem;
+			font-size: @heading-size;
 			padding: 0 20px;
 		}
 		p {
@@ -118,9 +119,45 @@ html, body {
 		border-radius: 5px;
 
 		a {
-			text-color: black	
+			color: black;
+			cursor: pointer;
+			
+			btn:hover {
+				text-decoration: underline;
+				transition-duration: 0.5s;
+				color: red;
+			}	
+		}
+	}
+	.description {
+		display: flex;
 
+		.left{
+			width: 50%;
 		}
+		.right {
+			width: 50%;
+			margin-left: 30px;
 		}
-	
+		p {
+			font-size: @standard-font;
+			text-align: left;
+			line-height: 1.4;
+		}	
+		table {
+			font-size: @standard-font;
+			text-align: left;
+			border: 1px solid gray;
+			line-height: 1.6;
+			
+			td {
+				border-bottom: 1px solid gray;
+			}
+		}
+	}
+	h2 {
+		font-size: @heading-size;
+		padding-top: 20px;
+		padding-bottom: 10px;
+	}
 }

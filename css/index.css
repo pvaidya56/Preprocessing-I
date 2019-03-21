@@ -137,6 +137,11 @@ html,
 body {
   height: 100%;
 }
+.link-hover {
+  text-decoration: underline;
+  transition-duration: 0.5s;
+  color: red;
+}
 .container {
   width: 900px;
   margin: 0 auto;
@@ -171,18 +176,56 @@ body {
   border-radius: 5px;
 }
 .container .intro h1 {
-  font-size: 3.0rem;
+  font-size: 3rem;
   padding: 0 20px;
 }
 .container .intro p {
   font-size: 1.6rem;
   padding: 10px 20px;
 }
-.container .intro .btn {
+.container .btn {
   width: 30%;
   padding: 10px;
   margin-left: 30px;
   margin-bottom: 45px;
   background-color: gray;
   border-radius: 5px;
+}
+.container .btn a {
+  color: black;
+  cursor: pointer;
+}
+.container .btn a btn:hover {
+  text-decoration: underline;
+  transition-duration: 0.5s;
+  color: red;
+}
+.container .description {
+  display: flex;
+}
+.container .description .left {
+  width: 50%;
+}
+.container .description .right {
+  width: 50%;
+  margin-left: 30px;
+}
+.container .description p {
+  font-size: 1.6rem;
+  text-align: left;
+  line-height: 1.4;
+}
+.container .description table {
+  font-size: 1.6rem;
+  text-align: left;
+  border: 1px solid gray;
+  line-height: 1.6;
+}
+.container .description table td {
+  border-bottom: 1px solid gray;
+}
+.container h2 {
+  font-size: 3rem;
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
