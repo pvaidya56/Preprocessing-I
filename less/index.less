@@ -61,6 +61,7 @@ html, body {
 @background-color: #D3D3D3;
 @standard-font: 1.6rem;
 @heading-size: 3.0rem;
+@phone: ~'@media (max-width: 500px)';
 
 .link-hover {
 	text-decoration: underline;
@@ -71,10 +72,19 @@ html, body {
 	width: 900px;
 	margin: 0 auto;
 
+	@media (max-width: 500px) {
+		max-width: 500px;
+		width: 100%;
+	}		
+	}
+
 	nav {
 		display: flex;
 		justify-content: flex-end;
 		
+		@media (max-width: 500px) {
+			justify-content: flex-start;
+		}
 		
 		a {
 			text-decoration: none;
@@ -100,6 +110,12 @@ html, body {
 			height: auto;
 			padding: 25px 20px;
 			border-radius: 5px;
+
+			@media (max-width: 500px) {
+				width: 50%;
+				height: auto;
+				padding-left: 35px;
+			}
 		}
 		h1 {
 			font-size: @heading-size;
@@ -196,4 +212,4 @@ html, body {
 			 padding: 30px;
 		 }
 	}
-}
+

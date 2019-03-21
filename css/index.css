@@ -146,22 +146,33 @@ body {
   width: 900px;
   margin: 0 auto;
 }
-.container nav {
+@media (max-width: 500px) {
+  .container {
+    max-width: 500px;
+    width: 100%;
+  }
+}
+nav {
   display: flex;
   justify-content: flex-end;
 }
-.container nav a {
+@media (max-width: 500px) {
+  nav {
+    justify-content: flex-start;
+  }
+}
+nav a {
   text-decoration: none;
   color: black;
   padding: 25px;
   font-size: 1.6rem;
 }
-.container nav a:hover {
+nav a:hover {
   text-decoration: underline;
   transition-duration: 0.5s;
   color: red;
 }
-.container .intro {
+.intro {
   background-color: gray;
   border-radius: 5px;
   background-color: #d3d3d3;
@@ -169,21 +180,28 @@ body {
   flex-direction: column;
   align-content: space-around;
 }
-.container .intro img {
+.intro img {
   width: 30%;
   height: auto;
   padding: 25px 20px;
   border-radius: 5px;
 }
-.container .intro h1 {
+@media (max-width: 500px) {
+  .intro img {
+    width: 50%;
+    height: auto;
+    padding-left: 35px;
+  }
+}
+.intro h1 {
   font-size: 3rem;
   padding: 0 20px;
 }
-.container .intro p {
+.intro p {
   font-size: 1.6rem;
   padding: 10px 20px;
 }
-.container .btn {
+.btn {
   width: 30%;
   padding: 10px;
   margin-left: 30px;
@@ -191,74 +209,74 @@ body {
   background-color: gray;
   border-radius: 5px;
 }
-.container .btn a {
+.btn a {
   color: black;
   cursor: pointer;
 }
-.container .btn a btn:hover {
+.btn a btn:hover {
   text-decoration: underline;
   transition-duration: 0.5s;
   color: red;
 }
-.container .description {
+.description {
   display: flex;
 }
-.container .description .left {
+.description .left {
   width: 50%;
 }
-.container .description .right {
+.description .right {
   width: 50%;
   margin-left: 30px;
 }
-.container .description p {
+.description p {
   font-size: 1.6rem;
   text-align: left;
   line-height: 1.4;
 }
-.container .description table {
+.description table {
   font-size: 1.6rem;
   text-align: left;
   border: 1px solid gray;
   line-height: 1.6;
 }
-.container .description table td {
+.description table td {
   border-bottom: 1px solid gray;
   padding: 7px;
 }
-.container h2 {
+h2 {
   font-size: 3rem;
   padding-top: 20px;
   padding-bottom: 10px;
 }
-.container .education {
+.education {
   border: 1px gray solid;
   width: 100%;
   font-size: 1.6rem;
   text-align: center;
 }
-.container .education th {
+.education th {
   font-weight: bold;
   padding: 10px 0;
   border-bottom: 1px solid gray;
   background-color: #d3d3d3;
 }
-.container .education tr:nth-child(2) {
+.education tr:nth-child(2) {
   border-bottom: 1px solid gray;
 }
-.container .education tr:nth-child(2) td {
+.education tr:nth-child(2) td {
   padding: 10px 0;
 }
-.container .education tr:nth-child(3) {
+.education tr:nth-child(3) {
   background-color: #d3d3d3;
 }
-.container .education tr:nth-child(3) td {
+.education tr:nth-child(3) td {
   padding: 10px 0;
 }
-.container footer {
+footer {
   width: 100%;
   font-size: 1.6rem;
 }
-.container footer p {
+footer p {
   text-align: center;
   padding: 30px;
 }
