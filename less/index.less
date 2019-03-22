@@ -52,8 +52,164 @@ table {
 * {
     box-sizing: border-box;
 }
-
+html {
+	font-size: 62.5%;
+}
 html, body {
     height: 100%;
 }
+@background-color: #D3D3D3;
+@standard-font: 1.6rem;
+@heading-size: 3.0rem;
+@phone: ~'@media (max-width: 500px)';
+
+.link-hover {
+	text-decoration: underline;
+	transition-duration: 0.5s;
+	color: red;
+}
+.container {
+	width: 900px;
+	margin: 0 auto;
+
+	@media (max-width: 500px) {
+		max-width: 500px;
+		width: 100%;
+	}		
+	}
+
+	nav {
+		display: flex;
+		justify-content: flex-end;
+		
+		@media (max-width: 500px) {
+			justify-content: flex-start;
+		}
+		
+		a {
+			text-decoration: none;
+			color: black;
+			padding: 25px;
+			font-size: @standard-font;
+
+			&:hover {
+				.link-hover;
+			}
+		}
+	}
+	.intro {
+		background-color: gray;
+		border-radius: 5px;
+		background-color: @background-color;
+		display: flex;
+		flex-direction: column;
+		align-content: space-around;
+
+		img {
+			width: 30%;
+			height: auto;
+			padding: 25px 20px;
+			border-radius: 5px;
+
+			@media (max-width: 500px) {
+				width: 50%;
+				height: auto;
+				padding-left: 35px;
+			}
+		}
+		h1 {
+			font-size: @heading-size;
+			padding: 0 20px;
+		}
+		p {
+			font-size: @standard-font;
+			padding: 10px 20px;
+		}
+	}
+	.btn {
+		width: 30%;
+		padding: 10px;
+		margin-left: 30px;
+		margin-bottom: 45px;
+		background-color: gray;
+		border-radius: 5px;
+
+		a {
+			color: black;
+			cursor: pointer;
+			
+			btn:hover {
+				text-decoration: underline;
+				transition-duration: 0.5s;
+				color: red;
+			}	
+		}
+	}
+	.description {
+		display: flex;
+
+		.left{
+			width: 50%;
+		}
+		.right {
+			width: 50%;
+			margin-left: 30px;
+		}
+		p {
+			font-size: @standard-font;
+			text-align: left;
+			line-height: 1.4;
+		}	
+		table {
+			font-size: @standard-font;
+			text-align: left;
+			border: 1px solid gray;
+			line-height: 1.6;
+			
+			td {
+				border-bottom: 1px solid gray;
+				padding: 7px;
+			}
+		}
+	}
+	h2 {
+		font-size: @heading-size;
+		padding-top: 20px;
+		padding-bottom: 10px;
+	}
+	.education {
+		border: 1px gray solid;
+		width: 100%;
+		font-size: @standard-font;
+		text-align: center;
+
+		th {
+			font-weight: bold;
+			padding: 10px 0;
+			border-bottom: 1px solid gray;
+			background-color: @background-color;
+		}
+		tr:nth-child(2) {
+			border-bottom: 1px solid gray;
+			
+			
+			td {
+				padding: 10px 0;
+			}
+		}
+		tr:nth-child(3) {
+			background-color: @background-color;
+			td {
+				padding: 10px 0;
+			}
+		}
+	}
+	footer {
+		width: 100%;
+		font-size: @standard-font;
+		 p {
+			 text-align: center;
+			 padding: 30px;
+		 }
+	}
 
